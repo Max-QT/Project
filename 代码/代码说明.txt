@@ -1,0 +1,36 @@
+以下是代码文档结构：
+
+1. 数据收集存储模块代码
+    PHOH-price.py: 苯酚价格爬取
+    PHOH-company.py：苯酚售卖商家信息爬取
+    PHOH.db: 苯酚数据库，包含：table PHOH,PHOH_sale
+    PHOH-price.xls: 苯酚价格的excel文件
+
+2. 数据分析处理模块代码
+    1. 价格预测（需要使用LIBSVM工具箱）
+        SVM_PHOH_price.m: Matlab源代码
+        SVMcgForRegress.m: c&g参数选择函数
+        PHOH.xls: 苯酚价格
+    2. 词云图制作
+        WordCloud.py:词云图制作
+        WordCloud.jpg:生成的词云图
+        football.jfif:词云图原始图片
+
+3. 数据可视化模块代码
+    flask：
+        Flask.py: 网页框架
+        PHOH.db: 苯酚数据库
+        static/assets: js文件、css文件以及图片
+            style-starter.css
+            echarts.min.js: Echarts
+            bmap.min.js: Echarts-百度地图
+            jquery-3.3.1.min.js
+            jquery.magnific-popup.min.js
+            owl.carousel.js
+            bootstrap.min.js
+            images：图片
+        templates:网页html文件
+            index.html: home页
+            product.html: product页
+            about.html: about页
+
